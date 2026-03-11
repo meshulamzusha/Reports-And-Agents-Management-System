@@ -1,6 +1,8 @@
+import AdminNavbar from "../components/AdminNavbar/AdminNavbar"
+
 const AdminDashboard = () => {
   return (
-    <div>AdminDashboard</div>
+    <div><AdminNavbar/></div>
   )
 }
 
