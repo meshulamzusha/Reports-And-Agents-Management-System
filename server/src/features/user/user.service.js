@@ -26,6 +26,15 @@ export const createUserService = async (userData) => {
       throw conflictError;
     }
 
+    throw error;
+  }
+};
+
+export const getAllService = async () => {
+  try {
+    const users = await User.find()
+    return users
+  } catch (error) {
     throw error
   }
 };
