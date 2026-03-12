@@ -19,7 +19,7 @@ export const LoginForm = () => {
     const result = await loginService(data);
 
     if (result.ok) {
-      navigate("/dashboard");
+      navigate("/dashboard", { replace: true });
     }
   };
 

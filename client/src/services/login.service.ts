@@ -1,4 +1,4 @@
-import { LoginInputs } from "../types/loginForm";
+import { LoginInputs } from "../types/auth.types";
 
 export const loginService = async (data: LoginInputs) => {
   try {
@@ -17,7 +17,7 @@ export const loginService = async (data: LoginInputs) => {
       console.log("Logged in:", result);
     }
 
-    return result
+    return result;
   } catch (err) {
     console.error(err);
   }

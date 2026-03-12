@@ -1,9 +1,15 @@
-import AdminNavbar from "../components/AdminNavbar/AdminNavbar"
+import AdminNavbar from "../components/AdminNavbar/AdminNavbar";
+import CreateUserForm from "../components/CreateUserForm/CreateUserForm";
+import UsersTable from "../components/UsersTable/UsersTable";
 
 const AdminUsers = () => {
   return (
-    <div><AdminNavbar/>Users</div>
-  )
-}
+    <div>
+      <AdminNavbar />
+      <UsersTable />
+      <CreateUserForm />
+    </div>
+  );
+};
 
-export default AdminUsers
+export default AdminUsers;
