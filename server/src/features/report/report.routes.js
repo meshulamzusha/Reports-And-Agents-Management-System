@@ -10,7 +10,7 @@ const router = express.Router();
 router.post(
   "/",
   jwtGuard,
-  upload.single("image"),
+  upload.single("file"),
   validate(CreateReportSchema),
   handelCreateReport,
 );
